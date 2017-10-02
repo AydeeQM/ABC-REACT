@@ -87,16 +87,14 @@ class Results extends React.Component {
     render(e) {
         var percent = (this.props.score / this.props.questions.length * 100);
         return (
-            <div>
-                <h4>You Got {this.props.score} out of {this.props.questions.length} Correct</h4>
-                <h1>{percent}%</h1>
-                <hr />
+            <div className="progress-line">
                 <div className="progress">
                     <div className="progress-bar" role="progressbar" aria-valuenow={percent} aria-valuemin="0" aria-valuemax="100" style={{ width: percent + '%' }}>
                         {percent}%
                      </div>
                 </div>
                 <div>
+                <h2>You have {this.props.score} correct of the {this.props.questions.length} Question</h2>
                 </div>
             </div>
         )
