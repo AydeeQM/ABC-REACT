@@ -57,3 +57,6 @@ input[type=radio]{
     width: 90vw;
     padding: 40px 0px;
 }
+.progress-line{
+    padding: 200px;
+}
